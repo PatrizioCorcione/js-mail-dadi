@@ -1,3 +1,4 @@
+/*sezione email*/
 const accessiConsentiti = ["franco.verde@gmail.com","ciccio.rosso@gmail.com","matte.giallo@gmail.com","steo.nero@gmail.com","ugo.deughi@gmail.com"]
 
 const btnJv = document.getElementById("btn")
@@ -21,4 +22,14 @@ btnJv.addEventListener('click',function(event){
   }
 })
 
+/*sezione dadi*/
 
+numeroGio = Math.ceil(Math.random() * 6);
+numeroPc = Math.ceil(Math.random() * 6);
+
+if (numeroGio > numeroPc) {
+
+  document.getElementById("resultDice").innerHTML = "Hai vinto!";
+}else{
+  document.getElementById("resultDice").innerHTML = "Hai perso!";
+}
