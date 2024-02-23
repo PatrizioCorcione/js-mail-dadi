@@ -24,14 +24,33 @@ btnJv.addEventListener('click',function(event){
 
 /*sezione dadi*/
 
-numeroGio = Math.ceil(Math.random() * 6);
-numeroPc = Math.ceil(Math.random() * 6);
 
-if (numeroGio > numeroPc) {
 
-  document.getElementById("resultDice").innerHTML = "Hai vinto!";
-}else if(numeroGio == numeroPc){
-  document.getElementById("resultDice").innerHTML = "Pareggio!";
-}else{
-  document.getElementById("resultDice").innerHTML = "Hai perso!";
-}
+btnDice.addEventListener('click',function(){
+
+  numeroGio = Math.ceil(Math.random() * 6);
+  numeroPc = Math.ceil(Math.random() * 6);
+  
+  if (numeroGio > numeroPc) {
+
+    document.getElementById("resultDice").innerHTML = "Hai vinto!";
+    document.getElementById("resultDice-gio").innerHTML = numeroGio;
+    document.getElementById("resultDice-pc").innerHTML = numeroPc;
+
+    }else if(numeroGio == numeroPc){
+
+    document.getElementById("resultDice").innerHTML = "Pareggio!";
+    document.getElementById("resultDice-gio").innerHTML = numeroGio;
+    document.getElementById("resultDice-pc").innerHTML = numeroPc;
+
+    }else{
+
+    document.getElementById("resultDice").innerHTML = "Hai perso!";
+    document.getElementById("resultDice-gio").innerHTML = numeroGio;
+    document.getElementById("resultDice-pc").innerHTML = numeroPc;
+
+  }
+
+})
+
+
