@@ -30,6 +30,8 @@ numeroPc = Math.ceil(Math.random() * 6);
 if (numeroGio > numeroPc) {
 
   document.getElementById("resultDice").innerHTML = "Hai vinto!";
+}else if(numeroGio == numeroPc){
+  document.getElementById("resultDice").innerHTML = "Pareggio!";
 }else{
   document.getElementById("resultDice").innerHTML = "Hai perso!";
 }
