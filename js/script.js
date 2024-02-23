@@ -11,6 +11,8 @@ btnJv.addEventListener('click',function(event){
   for (let i = 0; i < accessiConsentiti.length; i++) {
   if (emailJs.value == accessiConsentiti[i]) {
     document.getElementById("result").innerHTML = "Accesso acconsentito";
+    i = accessiConsentiti.length;
+    /*ci sarebbe anche retur*/
 
     } else {
       document.getElementById("result").innerHTML = "Accesso negato";
